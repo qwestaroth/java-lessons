@@ -1,4 +1,4 @@
-package lessons;
+package lessons.oop;
 
 public enum Size {
 

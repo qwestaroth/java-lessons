@@ -1,4 +1,4 @@
-package lessons;
+package lessons.oop;
 
 public class Dog {
 
@@ -12,7 +12,7 @@ public class Dog {
 
     public Dog(){
         dogsCount++;
-        System.out.println("lessons.Dog;s count is " + dogsCount);
+        System.out.println("lessons.oop.Dog's count is " + dogsCount);
 
     }
 

@@ -1,10 +1,10 @@
-package lessons;
+package lessons.oop;
 
 public class Main{
 
     public static void main(String[] args) {
 
-        System.out.println("lessons.Dog's count " + Dog.getDogsCount());
+        System.out.println("lessons.oop.Dog's count " + Dog.getDogsCount());
 
         Dog lab = new Dog();
         lab.setName("Charley");
@@ -25,7 +25,15 @@ public class Main{
         doberman.bite();
 
         Size s = Size.SMALL;
-        System.out.println(s);
+        Size s1 = Size.valueOf("BIG");
+        //System.out.println(s1);
+
+        Size[] values = Size.values();
+        for (int i = 0; i < values.length; i++) {
+            System.out.println(values[i]);
+        }
+
+
 
 
     }
