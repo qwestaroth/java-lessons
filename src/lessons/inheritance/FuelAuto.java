@@ -11,7 +11,7 @@ public class FuelAuto extends Auto{
         this.tankVolume = tankVolume;
     }
 
-    public void fuelUp(int petrolVolume){
+    void fuelUp(int petrolVolume){
         availiblePetrol+=petrolVolume;
         System.out.println("Adding fuel");
     }

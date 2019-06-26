@@ -15,7 +15,14 @@ public class Bus extends FuelAuto{
         fuelUp(volume);
     }
 
-
+    @Override
+    public void fuelUp(int petrolVolume) {
+        int volume = getAvailiblePetrol() + petrolVolume;
+        if (volume > getTankVolume()){
+            setAvailiblePetrol(getTankVolume());
+        }
+        System.out.println("Adding Diesiel");
+    }
 
     public int getPassengerNumber() {
         return passengerNumber;
